@@ -21,12 +21,13 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**𝐈'𝐦 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐉𝐎𝐈𝐍 [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
+    "__**𝐈 𝐚𝐦 ⚡️ 𝐀𝐋𝐈𝐄𝐍 𝐓𝐀𝐆 ⚡️ 𝐁𝐨𝐭 𝐈 𝐜𝐚𝐧 𝐦𝐞𝐧𝐭𝐢𝐨𝐧 𝐚𝐥𝐥 𝐦𝐞𝐦𝐛𝐞𝐫𝐬 𝐨𝐟 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 🔥\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐉𝐎𝐈𝐍 [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
     link_preview=False,
     buttons=(
       [
-        Button.url('✨𝙎𝙐𝙋𝙋𝙊𝙍𝙏', 'https://t.me/ALIEN_X_SUPPORT'),
-        Button.url('📦 𝙎𝙊𝙐𝙍𝘾𝙀', 'https://youtu.be/-uC4F5Z2iFI')
+        Button.url('✨𝐒𝐔𝐏𝐏𝐎𝐑𝐓 ✨', 'https://t.me/ALIEN_X_SUPPORT'),
+        Button.url('⚔️ 𝐀𝐋𝐈𝐄𝐍 𝐗 ⚔️', 'https://t.me/ALIEN_ROBOT'),
+        Button.url('💫 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 💫', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')  
       ]
     )
   )
@@ -40,7 +41,8 @@ async def help(event):
     buttons=(
       [
         Button.url('✨𝙎𝙐𝙋𝙋𝙊𝙍𝙏', 'https://t.me/ALIEN_X_SUPPORT'),
-        Button.url('📦 𝙎𝙊𝙐𝙍𝘾𝙀', 'https://youtu.be/-uC4F5Z2iFI')
+        Button.url('⚔️ 𝐀𝐋𝐈𝐄𝐍 𝐗 ⚔️', 'https://t.me/ALIEN_ROBOT'),
+        Button.url('💫 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 💫', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')  
       ]
     )
   )
@@ -96,7 +98,7 @@ async def all(event):
     usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
     if usrnum == 5:
       if mode == "text_on_cmd":
-        txt = f"{usrtxt}\n\n{msg}\n\nMade bY [𝐌𝐔𝐊𝐔𝐍𝐃](https://t.me/LEGEND_MUKUND) ✌️🔥"
+        txt = f"{usrtxt}\n\n{msg}\n\nMade bY [𝐌𝐔𝐊𝐔𝐍𝐃](https://t.me/ABOUT_MUKUND) 💫✨"
         await client.send_message(chat_id, txt)
       elif mode == "text_on_reply":
         await msg.reply(usrtxt)
