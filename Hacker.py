@@ -27,18 +27,18 @@ async def start(event):
        [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/ALIEN_MENTION_ROBOT?startgroup=true"),
-    ],
-     [
+     ),
+     (
         InlineKeyboardButton(text="⚡️ ᴀᴅᴅ ᴍᴀɪɴ ʙᴏᴛ ⚡️", url="t.me/ALIEN_ROBOT?startgroup=true"),
-     ],
-     [  
+     ),
+     (  
         InlineKeyboardButton(text="⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠", url="https://t.me/ALIEN_X_SUPPORT"),
         InlineKeyboardButton(text="✨ ᴜᴘᴅᴀᴛᴇꜱ 📢", url="https://t.me/ALIEN_X_UPDATE"),
-    ], 
+     ), 
 
-    [
+    (
         InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅꜱ🔥", url="https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2"), 
-      ]
+       ]
     )
   )
 
@@ -49,21 +49,21 @@ async def help(event):
     helptext,
     link_preview=False,
     buttons=(
-      [
+       [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/ALIEN_MENTION_ROBOT?startgroup=true"),
-    ],
-     [
+     ),
+     (
         InlineKeyboardButton(text="⚡️ ᴀᴅᴅ ᴍᴀɪɴ ʙᴏᴛ ⚡️", url="t.me/ALIEN_ROBOT?startgroup=true"),
-     ],
-     [  
+     ),
+     (  
         InlineKeyboardButton(text="⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠", url="https://t.me/ALIEN_X_SUPPORT"),
         InlineKeyboardButton(text="✨ ᴜᴘᴅᴀᴛᴇꜱ 📢", url="https://t.me/ALIEN_X_UPDATE"),
-    ], 
+     ), 
 
-    [
+    (
         InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅꜱ🔥", url="https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2"), 
-      ]
+       ]
     )
   )
   
