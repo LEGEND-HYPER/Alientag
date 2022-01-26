@@ -21,25 +21,17 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**𝐈'𝐦 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐀𝐋𝐈𝐄𝐍 𝐗 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
+    "__**𝐈'𝐦 ⚡️ 𝐀𝐋𝐈𝐄𝐍 𝐓𝐀𝐆 ⚡️**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 🔭\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐀𝐋𝐈𝐄𝐍 𝐗 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
     link_preview=False,
-    buttons=(
-       [
-         Button.url('ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥', 't.me/ALIEN_MENTION_ROBOT?startgroup=true'),
-        ),
-     (
-        Button.url('⚡️ ᴀᴅᴅ ᴍᴀɪɴ ʙᴏᴛ ⚡️', 't.me/ALIEN_ROBOT?startgroup=true'),
-     ),
-     (  
-        Button.url('⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠', 't.me/ALIEN_X_SUPPORT'),
-        Button.url('🎉 ᴜᴘᴅᴀᴛᴇꜱ 📩', 't.me/ALIEN_X_UPDATE'),
-     ), 
-     (
-        Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2'),
-       ]
+     buttons=(
+      [
+        Button.url('⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠', 'https://t.me/ALIEN_X_SUPPORT'),
+        Button.url('⚔️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ⚔️', 'https://t.me/ALIEN_MENTION_ROBOT?startgroup=true'),  
+        Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')
+      ]
     )
-  )    
-    
+  )
+
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
   helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [𝐀𝐋𝐈𝐄𝐍 𝐗 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
@@ -47,21 +39,15 @@ async def help(event):
     helptext,
     link_preview=False,
     buttons=(
-       [
-         Button.url('ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥', 't.me/ALIEN_MENTION_ROBOT?startgroup=true'),
-        ),
-     (
-        Button.url('⚡️ ᴀᴅᴅ ᴍᴀɪɴ ʙᴏᴛ ⚡️', 't.me/ALIEN_ROBOT?startgroup=true'),
-     ),
-     (  
-        Button.url('⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠', 't.me/ALIEN_X_SUPPORT'),
-        Button.url('🎉 ᴜᴘᴅᴀᴛᴇꜱ 📩', 't.me/ALIEN_X_UPDATE'),
-     ), 
-     (
-        Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2'),
-       ]
+       buttons=(
+      buttons=(
+      [
+        Button.url('⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠', 'https://t.me/ALIEN_X_SUPPORT'),
+        Button.url('⚔️ ᴀʟɪᴇɴ x ⚔️', 'https://t.me/ALIEN_ROBOT'),  
+        Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')
+      ]
     )
-  )    
+  )
   
 @client.on(events.NewMessage(pattern="^/all ?(.*)"))
 async def all(event):
