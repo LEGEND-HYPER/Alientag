@@ -25,23 +25,21 @@ async def start(event):
     link_preview=False,
     buttons=(
        [
-        InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/ALIEN_MENTION_ROBOT?startgroup=true"),
-     ),
+         Button.url('ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥', 't.me/ALIEN_MENTION_ROBOT?startgroup=true'),
+        ),
      (
-        InlineKeyboardButton(text="⚡️ ᴀᴅᴅ ᴍᴀɪɴ ʙᴏᴛ ⚡️", url="t.me/ALIEN_ROBOT?startgroup=true"),
+        Button.url('⚡️ ᴀᴅᴅ ᴍᴀɪɴ ʙᴏᴛ ⚡️', 't.me/ALIEN_ROBOT?startgroup=true'),
      ),
      (  
-        InlineKeyboardButton(text="⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠", url="https://t.me/ALIEN_X_SUPPORT"),
-        InlineKeyboardButton(text="✨ ᴜᴘᴅᴀᴛᴇꜱ 📢", url="https://t.me/ALIEN_X_UPDATE"),
+        Button.url('⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠', 't.me/ALIEN_X_SUPPORT'),
+        Button.url('🎉 ᴜᴘᴅᴀᴛᴇꜱ 📩', 't.me/ALIEN_X_UPDATE'),
      ), 
-
-    (
-        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅꜱ🔥", url="https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2"), 
+     (
+        Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2'),
        ]
     )
-  )
-
+  )    
+    
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
   helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [𝐀𝐋𝐈𝐄𝐍 𝐗 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
