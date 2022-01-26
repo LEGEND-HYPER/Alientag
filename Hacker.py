@@ -21,30 +21,28 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**𝐈'𝐦 ⚡️ 𝐀𝐋𝐈𝐄𝐍 𝐓𝐀𝐆 ⚡️**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 🔭\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐀𝐋𝐈𝐄𝐍 𝐗 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
+    "__**𝐈'𝐦 ⚡️ 𝐀𝐋𝐈𝐄𝐍 𝐓𝐀𝐆 ⚡️**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 🥀\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
     link_preview=False,
-     buttons=(
+    buttons=(
       [
-        Button.url('⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠', 'https://t.me/ALIEN_X_SUPPORT'),
-        Button.url('⚔️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ⚔️', 'https://t.me/ALIEN_MENTION_ROBOT?startgroup=true'),  
-        Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')
+        Button.url('⚒𝙎𝙐𝙋𝙋𝙊𝙍𝙏🛠', 'https://t.me/JaiHindChatting'),
+        Button.url('⚡️𝐀𝐃𝐃 𝐌𝐄⚡️', 'https://t.me/ALIEN_MENTION_ROBOT?startgroup=true'),
+        Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')  
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [𝐀𝐋𝐈𝐄𝐍 𝐗 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
+  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
-       buttons=(
-      buttons=(
-      [
-        Button.url('⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠', 'https://t.me/ALIEN_X_SUPPORT'),
-        Button.url('⚔️ ᴀʟɪᴇɴ x ⚔️', 'https://t.me/ALIEN_ROBOT'),  
-        Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')
+     [
+        Button.url('⚒𝙎𝙐𝙋𝙋𝙊𝙍𝙏🛠', 'https://t.me/JaiHindChatting'),
+        Button.url('⚡️𝐀𝐃𝐃 𝐌𝐄⚡️', 'https://t.me/ALIEN_MENTION_ROBOT?startgroup=true'),
+        Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')  
       ]
     )
   )
@@ -88,7 +86,7 @@ async def all(event):
     if msg == None:
         return await event.respond("__I Can't Mention Members For Older Messages! (messages which are sent before I'm added to group)__")
   else:
-    return await event.respond("__Reply To a Message Or Give Me Some Text To Mention Others\n\nMade bY @ALIEN_X_SUPPORT !__")
+    return await event.respond("__Reply To a Message Or Give Me Some Text To Mention Others\n\nMade by @ALIEN_X_SUPPORT !__")
   
   spam_chats.append(chat_id)
   usrnum = 0
@@ -100,7 +98,7 @@ async def all(event):
     usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
     if usrnum == 5:
       if mode == "text_on_cmd":
-        txt = f"{usrtxt}\n\n{msg}\n\nMade bY [𝐌𝐔𝐊𝐔𝐍𝐃](https://t.me/ABOUT_MUKUND) 💫✨"
+        txt = f"{usrtxt}\n\n{msg}\n\nMade by [𝐌𝐔𝐊𝐔𝐍𝐃](https://t.me/ABOUT_MUKUND) ✌️🔥"
         await client.send_message(chat_id, txt)
       elif mode == "text_on_reply":
         await msg.reply(usrtxt)
@@ -123,5 +121,5 @@ async def cancel_spam(event):
       pass
     return await event.respond('__Stopped.__')
 
-print(">> ALIEN TAGALL STARTED @ALIEN_X_SUPPORT<<")
+print(">> HACKER TAGALL STARTED @ALIEN_X_SUPPORT<<")
 client.run_until_disconnected()
