@@ -91,7 +91,7 @@ async def all(event):
         )
       )
     ):
-      is_admin = False
+      is_admin = True
   if not is_admin:
     return await event.respond("__Only Admins Can Mention All\n\nFor More Go On @ALIEN_X_SUPPORT !__")
   
