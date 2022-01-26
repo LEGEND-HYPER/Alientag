@@ -21,7 +21,7 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "𝐈 𝐚𝐦 ⚡️ 𝐀𝐋𝐈𝐄𝐍 𝐓𝐀𝐆 ⚡️ 𝐁𝐨𝐭 𝐈 𝐜𝐚𝐧 𝐦𝐞𝐧𝐭𝐢𝐨𝐧 𝐚𝐥𝐥 𝐦𝐞𝐦𝐛𝐞𝐫𝐬 𝐨𝐟 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 🔥\n𝐂𝐥𝐢𝐜𝐤 /help 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐉𝐎𝐈𝐍 [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
+    "__**𝐈'𝐦 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐀𝐋𝐈𝐄𝐍 𝐗 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
     link_preview=False,
     buttons=(
        [
@@ -44,7 +44,7 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Class me aajao sab`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage use /cancel to stop the tagging process__.\n\n𝐉𝐎𝐈𝐍 [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
+  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [𝐀𝐋𝐈𝐄𝐍 𝐗 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
   await event.reply(
     helptext,
     link_preview=False,
@@ -91,7 +91,7 @@ async def all(event):
         )
       )
     ):
-      is_admin = True
+      is_admin = False
   if not is_admin:
     return await event.respond("__Only Admins Can Mention All\n\nFor More Go On @ALIEN_X_SUPPORT !__")
   
