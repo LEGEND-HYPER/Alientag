@@ -21,28 +21,48 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**𝐈 𝐚𝐦 ⚡️ 𝐀𝐋𝐈𝐄𝐍 𝐓𝐀𝐆 ⚡️ 𝐁𝐨𝐭 𝐈 𝐜𝐚𝐧 𝐦𝐞𝐧𝐭𝐢𝐨𝐧 𝐚𝐥𝐥 𝐦𝐞𝐦𝐛𝐞𝐫𝐬 𝐨𝐟 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 🔥\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐉𝐎𝐈𝐍 [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
+    "𝐈 𝐚𝐦 ⚡️ 𝐀𝐋𝐈𝐄𝐍 𝐓𝐀𝐆 ⚡️ 𝐁𝐨𝐭 𝐈 𝐜𝐚𝐧 𝐦𝐞𝐧𝐭𝐢𝐨𝐧 𝐚𝐥𝐥 𝐦𝐞𝐦𝐛𝐞𝐫𝐬 𝐨𝐟 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 🔥\n𝐂𝐥𝐢𝐜𝐤 /help 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐉𝐎𝐈𝐍 [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
     link_preview=False,
     buttons=(
-      [
-        Button.url('✨𝐒𝐔𝐏𝐏𝐎𝐑𝐓 ✨', 'https://t.me/ALIEN_X_SUPPORT'),
-        Button.url('⚔️ 𝐀𝐋𝐈𝐄𝐍 𝐗 ⚔️', 'https://t.me/ALIEN_ROBOT'),
-        Button.url('💫 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 💫', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')  
+       [
+        InlineKeyboardButton(
+            text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/ALIEN_MENTION_ROBOT?startgroup=true"),
+    ],
+     [
+        InlineKeyboardButton(text="⚡️ ᴀᴅᴅ ᴍᴀɪɴ ʙᴏᴛ ⚡️", url="t.me/ALIEN_ROBOT?startgroup=true"),
+     ],
+     [  
+        InlineKeyboardButton(text="⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠", url="https://t.me/ALIEN_X_SUPPORT"),
+        InlineKeyboardButton(text="✨ ᴜᴘᴅᴀᴛᴇꜱ 📢", url="https://t.me/ALIEN_X_UPDATE"),
+    ], 
+
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅꜱ🔥", url="https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2"), 
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Class me aajao sab`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage use /cancel to stop the tagging process__.\n\nJOIN [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
+  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Class me aajao sab`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage use /cancel to stop the tagging process__.\n\n𝐉𝐎𝐈𝐍 [𝐀𝐋𝐈𝐄𝐍 𝐗](https://t.me/ALIEN_X_SUPPORT) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('✨𝙎𝙐𝙋𝙋𝙊𝙍𝙏', 'https://t.me/ALIEN_X_SUPPORT'),
-        Button.url('⚔️ 𝐀𝐋𝐈𝐄𝐍 𝐗 ⚔️', 'https://t.me/ALIEN_ROBOT'),
-        Button.url('💫 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 💫', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')  
+        InlineKeyboardButton(
+            text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/ALIEN_MENTION_ROBOT?startgroup=true"),
+    ],
+     [
+        InlineKeyboardButton(text="⚡️ ᴀᴅᴅ ᴍᴀɪɴ ʙᴏᴛ ⚡️", url="t.me/ALIEN_ROBOT?startgroup=true"),
+     ],
+     [  
+        InlineKeyboardButton(text="⚒ ꜱᴜᴘᴘᴏʀᴛ 🛠", url="https://t.me/ALIEN_X_SUPPORT"),
+        InlineKeyboardButton(text="✨ ᴜᴘᴅᴀᴛᴇꜱ 📢", url="https://t.me/ALIEN_X_UPDATE"),
+    ], 
+
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅꜱ🔥", url="https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2"), 
       ]
     )
   )
