@@ -25,7 +25,7 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('⚒𝙎𝙐𝙋𝙋𝙊𝙍𝙏🛠', 'https://t.me/JaiHindChatting'),
+        Button.url('⚒𝙎𝙐𝙋𝙋𝙊𝙍𝙏🛠', 'https://t.me/ALIEN_X_SUPPORT'),
         Button.url('⚡️𝐀𝐃𝐃 𝐌𝐄⚡️', 'https://t.me/ALIEN_MENTION_ROBOT?startgroup=true'),
         Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')  
       ]
@@ -40,7 +40,7 @@ async def help(event):
     link_preview=False,
     buttons=(
      [
-        Button.url('⚒𝙎𝙐𝙋𝙋𝙊𝙍𝙏🛠', 'https://t.me/JaiHindChatting'),
+        Button.url('⚒𝙎𝙐𝙋𝙋𝙊𝙍𝙏🛠', 'https://t.me/ALIEN_X_SUPPORT'),
         Button.url('⚡️𝐀𝐃𝐃 𝐌𝐄⚡️', 'https://t.me/ALIEN_MENTION_ROBOT?startgroup=true'),
         Button.url('🧩 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ 🔎', 'https://telegra.ph/ALIEN-MENTION-ROBOT-COMMANDS-01-25-2')  
       ]
